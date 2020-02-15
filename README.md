@@ -9,6 +9,21 @@
 [Github OAuth](https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/
 )
 
+
 ##工具
 [Git](https://git-scm.com/)
 [Visual](https://www.visual-paradigm.com/cn/)
+
+##脚本
+
+```sql
+create table if not exists user
+(
+	id int null,
+	account_id varchar(100) null,
+	name varchar(50) null,
+	token char(36) null,
+	gmt_create bigint null,
+	gmt_modified bigint null
+);
+```
